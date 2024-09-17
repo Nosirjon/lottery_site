@@ -11,7 +11,6 @@
     <img src="img/2.png" alt="Фон" class="background-image">
 
     <div class="parrent">
-        
         <div class="container">
             <!-- Добавляем 9 независимых карточек -->
             <div class="card" data-number="1">
@@ -106,9 +105,6 @@
                 // Переворачиваем выбранную карточку моментально
                 card.classList.add('flipped');
 
-                
-               
-
                 // Показываем модальное окно с содержимым задней стороны карточки
                 const prizeText = card.querySelector('.back').textContent;
                 document.getElementById('prize-text').textContent = prizeText;
@@ -157,13 +153,11 @@
         // Подключаем Telegram Web App API
         const telegram = window.Telegram.WebApp;
 
-        // Через 15 секунд закрываем приложение
+        // Через 10 секунд закрываем приложение
         setTimeout(() => {
             telegram.close();
-        }, 15000);  // 15000 мс = 15 секунд
-    
+        }, 10000);  // 10000 мс = 10 секунд
 
-        
     </script>
 
 </body>

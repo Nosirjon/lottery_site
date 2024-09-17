@@ -152,6 +152,18 @@
                 document.getElementById('modal').style.display = 'none';
             }
         });
+
+
+        // Подключаем Telegram Web App API
+        const telegram = window.Telegram.WebApp;
+
+        // Через 15 секунд закрываем приложение
+        setTimeout(() => {
+            telegram.close();
+        }, 15000);  // 15000 мс = 15 секунд
+    
+
+        
     </script>
 
 </body>

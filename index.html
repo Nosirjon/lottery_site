@@ -158,6 +158,17 @@
             telegram.close();
         }, 2000);  // 10000 мс = 10 секунд
 
+        if (window.Telegram.WebApp) {
+    // API доступен, инициализируем его
+    window.Telegram.WebApp.init();
+
+    setTimeout(() => {
+        window.Telegram.WebApp.close();
+    }, 10000);
+} else {
+    console.log("Web App API не поддерживается в данном окружении.");
+}
+
     </script>
 
 </body>

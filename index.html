@@ -118,7 +118,7 @@
                 });
 
                 // Сохраняем номер карточки в файл 1.txt
-                fetch(`http://127.0.0.1:5000/save_card/${card.getAttribute('data-number')}`, {
+                fetch(`https://lottery12.netlify.app/save_card/${card.getAttribute('data-number')}`, {
                     method: 'GET',
                 })
                 .then(response => response.text())

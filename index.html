@@ -149,15 +149,6 @@
             }
         });
 
-
-        // Подключаем Telegram Web App API
-        const telegram = window.Telegram.WebApp;
-
-        // Через 10 секунд закрываем приложение
-        setTimeout(() => {
-            telegram.close();
-        }, 2000);  // 10000 мс = 10 секунд
-
         // Проверяем наличие объекта Telegram API
     if (window.Telegram && window.Telegram.WebApp) {
         // Инициализация Web App
